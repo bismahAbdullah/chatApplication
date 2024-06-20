@@ -4,12 +4,9 @@
 1. [Introduction](#introduction)
 2. [Features](#features)
 3. [Tech Stack](#tech-stack)
-4. [Installation](#installation)
-5. [Usage](#usage)
-6. [API Endpoints](#api-endpoints)
-7. [Security](#security)
-8. [Contributing](#contributing)
-9. [License](#license)
+4. [Running the project](#Runningtheproject)
+5. [Security](#security)
+
 
 ## Introduction
 The **Messaging App** is a full-featured messaging platform designed for secure and efficient communication. It includes user authentication, real-time text and voice messaging, media sharing, and group chat functionality, all with robust security measures such as encryption.
@@ -43,15 +40,14 @@ The **Messaging App** is a full-featured messaging platform designed for secure 
 - **Security:** HTTPS, JWT for authentication, and encryption for data at rest and in transit
 
 
-### Running the Project
-
-## Frontend
+## Running the Project
+### Frontend
 - run the frontend on port:3000
-## Backend
+### Backend
 - run the backend on port:3002
 - Register a new account or login with existing credentials.
 
-### Security 
+## Security 
 - **Authentication:** JSON Web Tokens (JWT) are used for secure authentication.
 - **Encryption:** All messages are encrypted for secure communication.
 - **HTTPS:** Ensure your production deployment uses HTTPS to secure data in transit.
