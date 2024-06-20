@@ -1,0 +1,112 @@
+
+//   // sideBar.scss
+
+// .sidebar {
+//     width: 92px;
+//     height: 100%;
+//     // position: fixed;
+//     left: 0;
+//     top: 0;
+//     display: flex;
+//     flex-direction: column;
+//     background-color: #06334D;
+// }
+
+// .sidebar-button {
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     width: 100%;
+//     height: 50px; /* Adjust height as needed */
+//     border: none;
+//     background-color: transparent;
+//     color: white;
+//     text-decoration: none;
+//     transition: background-color 0.3s;
+//     cursor: pointer;
+//     padding: 0; /* Remove default padding */
+// }
+
+// .sidebar-button:hover {
+//     background-color: rgba(255, 255, 255, 0.1); /* Change background color on hover */
+// }
+
+// .sidebar-button img {
+//     width: 24px;
+//     height: 24px;
+//     margin-right: 8px; /* Adjust spacing between image and text */
+// }
+
+// .sidebar-button span {
+//     font-size: 14px;
+//     line-height: 1.5;
+//     white-space: nowrap; /* Prevent text from wrapping */
+//     overflow: hidden;
+//     text-overflow: ellipsis; /* Add ellipsis (...) if text overflows */
+// }
+
+// .end-buttons {
+//     margin-top: auto; /* Push end buttons to the bottom */
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+// }
+// sideBar.scss
+
+.sidebar {
+    width: 92px;
+    height: calc(100vh - 60px);
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #06334D;
+}
+
+.sidebar-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 60px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    padding: 0;
+}
+
+.sidebar-button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-button img {
+    width: 25px;
+    height: 160px;
+    padding: 0px;
+    border-radius: 4px 0 0 0;
+}
+
+.sidebar-button span {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.sidebar-button:hover span {
+    opacity: 1;
+}
+
+.end-buttons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

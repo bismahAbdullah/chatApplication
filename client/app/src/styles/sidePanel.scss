@@ -1,0 +1,110 @@
+
+.side-panel {
+    width: 320px;
+    height: calc(100vh - 60px);
+    padding: 20px;
+    background-color: #f8f9fa; /* Example background color */
+    display: flex;
+    flex-direction: column;
+}
+
+.side-panel-heading {
+    width: 140px;
+    height: 23px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.44px;
+    text-align: left;
+    margin-bottom: 0px;
+    color: #06334D;
+}
+
+.side-panel-divider {
+    margin-bottom: 20px;
+}
+
+.side-panel-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.side-panel-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.side-panel-text {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    color: #06334D;
+}
+
+.side-panel-dropdown-section {
+    margin-bottom: 20px;
+}
+
+.dropdown-toggle {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    cursor: pointer;
+    color: #06334D;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    color: #06334D;
+    padding: 10px;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    width: 288px;
+    height: 55px;
+    padding: 12px 16px;
+    gap: 8px;
+    border-radius: 4px 0px 0px 0px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #dfe1e2; 
+}
+
+.profile-picture {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.username {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.41px;
+    text-align: left;
+}
+
+.status-indicator {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    margin-left: auto;
+}
+
+.status-indicator.true {
+    background-color: green;
+}
+
+.status-indicator.false {
+    background-color: red;
+}

@@ -1,0 +1,127 @@
+
+// MainPage.scss
+$navbar-bg-color: #06334D;
+$navbar-btn-hover-color: #08344D;
+$navbar-link-color: white;
+
+.navbar {
+  background-color: $navbar-bg-color;
+  padding: 30px;
+
+  .navbar-brand {
+    color: $navbar-link-color !important;
+    font-family: 'Saira Stencil One', sans-serif !important;
+    font-size: 35px;
+    margin: 0px;
+  }
+
+  .nav-link {
+    color: $navbar-link-color !important;
+    font-family: 'Roboto', sans-serif !important;
+    margin: 0 15px;
+    font-size: 20px;
+
+    &:hover {
+      color: lighten($navbar-link-color, 20%) !important;
+    }
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1);
+  }
+
+  .dropdown-menu {
+    background-color: $navbar-bg-color;
+    border: none;
+
+    .dropdown-item {
+      color: $navbar-link-color;
+
+      &:hover {
+        background-color: $navbar-btn-hover-color;
+        color: white;
+      }
+    }
+
+    .dropdown-divider {
+      border-top: 1px solid lighten($navbar-bg-color, 10%);
+    }
+  }
+
+  .btn-outline-success {
+    background-color: white;
+    color: $navbar-bg-color;
+    border-color: $navbar-bg-color;
+
+    &:hover {
+      background-color: $navbar-btn-hover-color;
+      color: white;
+    }
+  }
+}
+
+.mainPageWrapper {
+  position: relative;
+}
+
+.mainPageContainer {
+  &.blurred {
+    filter: blur(5px);
+  }
+}
+
+.mainPageContent {
+  display: flex;
+  flex-direction: row;
+  padding: 200px;
+}
+
+.textDescription {
+  flex-direction: column;
+  padding-right: 50px;
+
+  h1 {
+    font-family: 'Righteous', sans-serif !important;
+    font-size: 55px;
+    font-weight: 400;
+    line-height: 68.29px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    padding-bottom: 20px;
+    color: $navbar-bg-color;
+  }
+
+  h3 {
+    font-family: 'Roboto', sans-serif !important;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    text-align: left;
+    padding-bottom: 20px;
+    color: $navbar-bg-color;
+  }
+}
+
+.loginSignupButtons {
+  display: flex;
+  flex-direction: row;
+
+  button {
+    background-color: white;
+    color: #06334D;
+    border: 1px solid #06334D;
+    margin-right: 10px;
+    width: 200px;
+
+    &:hover {
+      background-color: #06334D;
+      color: white;
+    }
+  }
+}
+
+.mainPageImage {
+  display: flex;
+  flex-direction: column;
+}

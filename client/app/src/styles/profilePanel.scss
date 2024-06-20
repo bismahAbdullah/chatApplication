@@ -1,0 +1,704 @@
+// // .overlay {
+// //     position: fixed;
+// //     top: 0;
+// //     left: 0;
+// //     right: 0;
+// //     bottom: 0;
+// //     background: rgba(0, 0, 0, 0.5); // Dark background to indicate overlay
+// //     backdrop-filter: blur(5px); // Blurred background effect
+// //     display: flex;
+// //     justify-content: flex-start; // Align to the left side of the screen
+// //     align-items: flex-start; // Align to the top of the screen
+// //     z-index: 1000;
+// //   }
+// // .profile-containerp {
+// //     width: 500px;
+// //     height: 100vh;
+// //     position: fixed;
+// //     // top: 64px;
+// //     left: 1350px;
+// //     gap: 0;
+// //     opacity: 1;
+// //     background-color: #fff; // Add a background color if needed
+// //     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+// //     z-index: 1000; // Ensure it appears on top
+// //     margin-right: 100px;
+// //   }
+  
+// //   .profile-headerp {
+// //     width: 100%;
+// //     height: 59px;
+// //     padding: 8px 16px;
+// //     gap: 32px;
+// //     border-radius: 16px 0 0 0;
+// //     opacity: 1;
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: space-between;
+// //     border-bottom: 1px solid #06334D;
+// //     position: relative;
+// //   }
+  
+// //   .profile-headerp h1 {
+// //     margin: 0;
+// //     font-size: 24px;
+// //     font-weight: 600;
+// //     color: #06334D;
+
+// //   }
+  
+// //   .close-buttonp {
+// //     background: none;
+// //     border: none;
+// //     font-size: 24px;
+// //     cursor: pointer;
+// //     position: absolute;
+// //     top: 8px;
+// //     right: 16px;
+// //   }
+  
+// //   .profile-picture-containerp {
+// //     width: 300px;
+// //     height: 300px;
+// //     margin: 98px auto 0;
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: center;
+// //   }
+  
+// //   .profile-picturep {
+// //     width: 100%;
+// //     height: 100%;
+// //     border-radius: 4px 0 0 0;
+// //     object-fit: cover;
+// //   }
+  
+// //   .profile-infop {
+// //     margin-top: 20px;
+// //     padding: 0 16px;
+// //   }
+  
+// //   .username-sectionp {
+// //     display: flex;
+// //     align-items: center;
+// //     justify-content: space-between;
+// //     margin-bottom: 8px;
+// //   }
+  
+// //   .usernamep {
+// //     font-family: Roboto;
+// //     font-size: 20px;
+// //     font-weight: 600;
+// //     line-height: 23.44px;
+// //     text-align: left;
+// //     color: #06334D;
+    
+// //   }
+  
+// //   .edit-buttonp {
+// //     background-color: #BCE1FF;
+    
+// //     color: black;
+// //     border: none;
+// //     border-radius: 4px;
+// //     padding: 8px 16px;
+// //     cursor: pointer;
+// //   }
+// //   .logout-buttonp {
+// //     background-color: #BCE1FF;
+// //     border: none;
+// //     color: black;
+// //     position: absolute;
+// //     padding: 8px 16px;
+// //     bottom: 10px;
+// //     left: 10px;
+// //   }
+  
+  
+// //   .profile-descriptionp {
+// //     font-family: Roboto;
+// //     font-size: 16px;
+// //     font-weight: 400;
+// //     line-height: 24px;
+// //     text-align: left;
+// //     margin-bottom: 16px;
+// //     color:#06334D;
+// //     ;
+// //   }
+  
+// //   .emailp {
+// //     font-family: Roboto;
+// //     font-size: 12px;
+// //     font-weight: 500;
+// //     line-height: 14.06px;
+// //     text-align: left;
+// //     margin-bottom: 16px;
+// //     color: #5691B2;
+
+// //   }
+  
+// //   .contact-infop {
+// //     border-top: 1px solid #ddd;
+// //     padding-top: 16px;
+// //     color: #5691B2;
+// //   }
+  
+// //   .email-sectionp,
+// //   .phone-sectionp {
+// //     display: flex;
+// //     justify-content: space-between;
+// //     margin-bottom: 8px;
+// //     color: #5691B2;
+// //   }
+  
+// //   .labelp {
+// //     font-family: Roboto;
+// //     font-size: 12px;
+// //     font-weight: 500;
+// //     line-height: 14.06px;
+// //     text-align: left;
+// //   }
+  
+// //   .valuep {
+// //     font-family: Roboto;
+// //     font-size: 12px;
+// //     font-weight: 500;
+// //     line-height: 14.06px;
+// //     text-align: left;
+// //   }
+//   /* Overlay background with blur effect */
+// .overlay {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: rgba(0, 0, 0, 0.5);
+//     backdrop-filter: blur(5px);
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     z-index: 1000;
+//   }
+  
+//   /* Profile container */
+//   .profile-containerp {
+//     width: 500px;
+//     height: 100vh;
+//     position: fixed;
+//     left: 1350px;
+//     gap: 0;
+//     opacity: 1;
+//     background-color: #fff;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//     z-index: 1000;
+//     margin-right: 100px;
+//   }
+  
+//   /* Profile header */
+//   .profile-headerp {
+//     width: 100%;
+//     height: 59px;
+//     padding: 8px 16px;
+//     gap: 32px;
+//     border-radius: 16px 0 0 0;
+//     opacity: 1;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     border-bottom: 1px solid #06334D;
+//     position: relative;
+//   }
+  
+//   .profile-headerp h1 {
+//     margin: 0;
+//     font-size: 24px;
+//     font-weight: 600;
+//     color: #06334D;
+//   }
+  
+//   .close-buttonp {
+//     background: none;
+//     border: none;
+//     font-size: 24px;
+//     cursor: pointer;
+//     position: absolute;
+//     top: 8px;
+//     right: 16px;
+//   }
+  
+//   /* Profile picture container */
+//   .profile-picture-containerp {
+//     width: 300px;
+//     height: 300px;
+//     margin: 98px auto 0;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//   }
+  
+//   .profile-picturep {
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 4px 0 0 0;
+//     object-fit: cover;
+//   }
+  
+//   /* Profile information */
+//   .profile-infop {
+//     margin-top: 20px;
+//     padding: 0 16px;
+//   }
+  
+//   .username-sectionp {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     margin-bottom: 8px;
+//   }
+  
+//   .usernamep {
+//     font-family: Roboto;
+//     font-size: 20px;
+//     font-weight: 600;
+//     line-height: 23.44px;
+//     text-align: left;
+//     color: #06334D;
+//   }
+  
+//   .edit-buttonp {
+//     background-color: #BCE1FF;
+//     color: black;
+//     border: none;
+//     border-radius: 4px;
+//     padding: 8px 16px;
+//     cursor: pointer;
+//   }
+  
+//   .logout-buttonp {
+//     background-color: #BCE1FF;
+//     border: none;
+//     color: black;
+//     position: absolute;
+//     padding: 8px 16px;
+//     bottom: 10px;
+//     left: 10px;
+//   }
+  
+//   .profile-descriptionp {
+//     font-family: Roboto;
+//     font-size: 16px;
+//     font-weight: 400;
+//     line-height: 24px;
+//     text-align: left;
+//     margin-bottom: 16px;
+//     color: #06334D;
+//   }
+  
+//   .emailp {
+//     font-family: Roboto;
+//     font-size: 12px;
+//     font-weight: 500;
+//     line-height: 14.06px;
+//     text-align: left;
+//     margin-bottom: 16px;
+//     color: #5691B2;
+//   }
+  
+//   .contact-infop {
+//     border-top: 1px solid #ddd;
+//     padding-top: 16px;
+//     color: #5691B2;
+//   }
+  
+//   .email-sectionp,
+//   .phone-sectionp {
+//     display: flex;
+//     justify-content: space-between;
+//     margin-bottom: 8px;
+//     color: #5691B2;
+//   }
+  
+//   .labelp {
+//     font-family: Roboto;
+//     font-size: 12px;
+//     font-weight: 500;
+//     line-height: 14.06px;
+//     text-align: left;
+//   }
+  
+//   .valuep {
+//     font-family: Roboto;
+//     font-size: 12px;
+//     font-weight: 500;
+//     line-height: 14.06px;
+//     text-align: left;
+//   }
+  
+//   /* Edit Profile and Contact Forms */
+//   .edit-profile-form,
+//   .edit-contact-form {
+//     position: fixed;
+//     width: 338px;
+//     height: 359px;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     background: white;
+//     padding: 20px;
+//     border-radius: 8px 0 0 0;
+//     z-index: 1100;
+//     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+//   }
+  
+//   .edit-contact-form .edit-contact-form-content,
+//   .edit-profile-form .edit-profile-form-content {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 10px;
+//   }
+  
+//   .edit-contact-form h2,
+//   .edit-profile-form h2 {
+//     font-size: 18px;
+//     margin-bottom: 10px;
+//   }
+  
+//   .edit-contact-form hr,
+//   .edit-profile-form hr {
+//     margin: 10px 0;
+//   }
+  
+//   .edit-contact-form .input-group,
+//   .edit-profile-form .input-group {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 4px;
+//   }
+  
+//   .input-group label {
+//     font-family: Roboto;
+//     font-size: 12px;
+//     font-weight: 500;
+//     line-height: 14.06px;
+//     text-align: left;
+//   }
+  
+//   .input-group input,
+//   .input-group textarea {
+//     width: 290px;
+//     height: 40px;
+//     padding: 8px;
+//     border-radius: 4px 0 0 0;
+//     border: 1px solid #ddd;
+//   }
+  
+//   .input-group textarea {
+//     height: 119px;
+//   }
+  
+//   .button-container {
+//     display: flex;
+//     gap: 10px;
+//     justify-content: flex-end;
+//   }
+  
+//   .secondary-button,
+//   .primary-button {
+//     width: 75px;
+//     height: 40px;
+//     padding: 8px 16px;
+//     border-radius: 8px 0 0 0;
+//     border: 1px solid transparent;
+//   }
+  
+//   .secondary-button {
+//     background: #f0f0f0;
+//   }
+  
+//   .primary-button {
+//     background: #007bff;
+//     color: white;
+//   }
+  
+//   /* Form transition */
+//   .overlay-active {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+  /* Overlay background with blur effect */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Profile container */
+  .profile-containerp {
+    width: 500px;
+    height: 100vh;
+    position: fixed;
+    left: 1350px;
+    gap: 0;
+    opacity: 1;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    margin-right: 100px;
+  }
+  
+  /* Profile header */
+  .profile-headerp {
+    width: 100%;
+    height: 59px;
+    padding: 8px 16px;
+    gap: 32px;
+    border-radius: 16px 0 0 0;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #06334D;
+    position: relative;
+  }
+  
+  .profile-headerp h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #06334D;
+  }
+  
+  .close-buttonp {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+  
+  /* Profile picture container */
+  .profile-picture-containerp {
+    width: 300px;
+    height: 300px;
+    margin: 98px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .profile-picturep {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px 0 0 0;
+    object-fit: cover;
+  }
+  
+  /* Profile information */
+  .profile-infop {
+    margin-top: 20px;
+    padding: 0 16px;
+  }
+  
+  .username-sectionp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .usernamep {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.44px;
+    text-align: left;
+    color: #06334D;
+  }
+  
+  .edit-buttonp {
+    background-color: #BCE1FF;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  
+  .logout-buttonp {
+    background-color: #BCE1FF;
+    border: none;
+    color: black;
+    position: absolute;
+    padding: 8px 16px;
+    bottom: 10px;
+    left: 10px;
+  }
+  
+  .profile-descriptionp {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin-bottom: 16px;
+    color: #06334D;
+  }
+  
+  .emailp {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.06px;
+    text-align: left;
+    margin-bottom: 16px;
+    color: #5691B2;
+  }
+  
+  .contact-infop {
+    border-top: 1px solid #ddd;
+    padding-top: 16px;
+    color: #5691B2;
+  }
+  
+  .email-sectionp,
+  .phone-sectionp {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    color: #5691B2;
+  }
+  
+  .labelp {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.06px;
+    text-align: left;
+  }
+  
+  .valuep {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.06px;
+    text-align: left;
+  }
+  
+  /* Edit Profile and Contact Forms */
+  .edit-profile-form{
+    position: fixed;
+    width: 338px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .edit-contact-form {
+    position: fixed;
+    width: 338px;
+    height: 350px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .edit-contact-form .edit-contact-form-content,
+  .edit-profile-form .edit-profile-form-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .edit-contact-form h2,
+  .edit-profile-form h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .edit-contact-form hr,
+  .edit-profile-form hr {
+    margin: 10px 0;
+  }
+  
+  .edit-contact-form .input-group,
+  .edit-profile-form .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .input-group label {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14.06px;
+    text-align: left;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 290px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 4px 0 0 0;
+    border: 1px solid #ddd;
+  }
+  
+  .input-group textarea {
+    height: 119px;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+  }
+  
+  .secondary-button,
+  .primary-button {
+    width: 75px;
+    height: 40px;
+    padding: 8px 16px;
+    border-radius: 8px 0 0 0;
+    border: 1px solid transparent;
+  }
+  
+  .secondary-button {
+    background: #f0f0f0;
+  }
+  
+  .primary-button {
+    background:  #5691B2;
+    color: white;
+    width: 150px;
+  }
+  
+  /* Form transition */
+  .overlay-active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

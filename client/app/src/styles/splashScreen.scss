@@ -1,0 +1,169 @@
+// // mainPage.scss
+// .main-container {
+//     display: flex;
+//     flex-direction: column;
+//     height: 100vh;
+//     // padding: 20px;
+// }
+
+// .top-div {
+//     // margin-bottom: 20px;
+//     display: flex;
+//     justify-content: center;
+//     background-color: #06334D;
+//     padding: 10px;
+// }
+
+// .custom-textfield {
+//     width: 530px;
+//     height: 40px;
+//     padding: 12px 16px;
+//     border-radius: 8px;
+//     border: 1px solid #245E80;
+//     background-color: #124766;
+    
+//     &::placeholder {
+//         color:  #718799;
+//         ;  // Replace with your desired color
+//       }
+// }
+
+// .content-div {
+//     display: flex;
+//     flex-direction: row;
+//     gap: 0px;
+// }
+
+
+// .sidebar-div {
+//     flex: 0 0 92px; /* Adjust based on your sidebar width */
+// }
+
+// .sidepanel-div {
+//     flex: 0 0 320px; /* Adjust based on your side panel width */
+// }
+
+// .main-content-div {
+//     flex: 1;
+//     display: flex;
+//     flex-direction: column;
+//     padding: 20px;
+//     height: 100vh;
+//     justify-content: center;
+//     // align-items: center;
+//     background-color: #ffffff; /* Example background color */
+// }
+
+// .main-content-div img {
+//     width: 500px;
+//     height: 500px;
+//     // margin-top: 110px;
+//     // margin-left: 584px;
+//     gap: 0px;
+//     opacity: 0px;
+//     // justify-content: center;
+//     // align-items: center;
+// }
+
+// .main-content-div h2 {
+//     font-family: 'Saira Stencil One', sans-serif;
+//     font-size: 24px;
+//     font-weight: 400;
+//     line-height: 37.78px;
+//     letter-spacing: 0.05em;
+//     text-align: center;
+//     color: #214F6D; /* Example background color */
+// }
+
+// .main-content-div h3 {
+//     font-family: 'Roboto', sans-serif;
+//     font-size: 20px;
+//     font-weight: 400;
+//     line-height: 23.44px;
+//     letter-spacing: 0.05em;
+//     text-align: center;
+//     color:  #214F6D; /* Example background color */
+// }
+// splashScreen.scss
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.top-div {
+    display: flex;
+    justify-content: center;
+    background-color: #06334D;
+    padding: 10px;
+}
+
+.custom-textfield {
+    width: 530px;
+    height: 40px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #245E80;
+    background-color: #124766;
+    &::placeholder {
+        color:  #718799;
+    }
+}
+
+.content-div {
+    display: flex;
+    flex: 1;
+    max-height: calc(100vh - 40px);
+   
+}
+
+.sidebar-div {
+    flex: 0 0 92px;
+}
+
+.sidepanel-div {
+    flex: 0 0 320px;
+}
+
+.main-content-div1 {
+    flex: 1;
+    overflow-y: auto; /* Enable vertical scrolling */
+    // padding: 20px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    max-height: calc(100vh - 60px);
+}
+
+.main-content-div1 img {
+    // margin-top: 150px;
+    // margin-left: 300px;
+    // width: 500px;
+    // height: 500px;
+}
+
+.main-content-div1 h2 {
+    font-family: 'Saira Stencil One', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 37.78px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #214F6D;
+}
+
+.main-content-div1 h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23.44px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #214F6D;
+}
+
+/* Styling for the DirectProfileChat component */
+.direct-profile-chat {
+    max-height: calc(100vh - 40px); /* Subtract the height of the top div */
+}

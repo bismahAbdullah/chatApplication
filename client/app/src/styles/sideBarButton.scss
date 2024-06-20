@@ -1,0 +1,83 @@
+// // ButtonWithImage.scss
+// .button-with-image {
+//     width: 44px;
+//     height: 60px;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     position: fixed;
+//     top: 132px;
+//     left: 68px;
+//     gap: 0;
+//     opacity: 0;
+//     transform: rotate(-180deg);
+//     transition: all 0.5s ease;
+// }
+
+// .button-image {
+//     width: 44px;
+//     height: 44px;
+//     padding: 9px 10px;
+//     border-radius: 4px 0 0 0;
+//     opacity: 0;
+// }
+
+// .button-text {
+//     font-family: 'Roboto', sans-serif;
+//     font-size: 14px;
+//     font-weight: 500;
+//     line-height: 16.41px;
+//     text-align: left;
+//     opacity: 0;
+// }
+
+// .button-with-image.show {
+//     opacity: 1;
+//     transform: rotate(0deg);
+// }
+
+// .button-with-image.show .button-image,
+// .button-with-image.show .button-text {
+//     opacity: 1;
+// }
+.button-with-image {
+    width: 44px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    transition: all 0.5s ease;
+  
+    .button-image {
+      width: 44px;
+      height: 44px;
+      padding: 9px 10px;
+      border-radius: 4px 0 0 0;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+  
+    .button-text {
+      font-family: 'Roboto', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.41px;
+      text-align: left;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+  
+    &.show {
+      opacity: 1;
+      transform: rotate(0deg);
+  
+      .button-image,
+      .button-text {
+        opacity: 1;
+      }
+    }
+  }
+  
